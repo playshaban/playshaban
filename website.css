@@ -66,7 +66,7 @@ header p { color: white; font-family: 'Ubuntu', sans-serif; }
 	box-sizing: border-box;
 	padding: 20%;
 	
-	background-image: url(/image_resourses/setup1.jpg);
+	background-image: url(setup1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -124,7 +124,7 @@ section
 	height: 300px;
 	
 	margin-left: 5%;
-	margin-top: 6%;
+	margin-top: 10%;
 	position: relative;
     text-align: left;
 	position: relative;
@@ -222,18 +222,19 @@ section
 	   position: relative;
 	   margin: 0 auto;
 	   display: inline-block;
-	   border-radius:5%;
+	   border-radius:10%;
 	   height: 30px;
 	   width: 120px;
 	   background-color:grey;
 	   
 	   border-color: white; 
-	   border-width: 5%;
+	  
 	   
 	   
 	   cursor: pointer;
 
 	}
+
 	.nav-button a
 	{
 	   
@@ -263,13 +264,13 @@ section
 	
 	 .first
 	 {
-		 padding: 25%;
+		 padding:20%;
 	 }
 	 
 	 .box1
 	 {
-		 width: 95%;
-		 margin-left: 0;
+		 width: 90%;
+		 margin-left: 10px;
 	 }
 	 
 	 .box1 .text1
@@ -278,6 +279,7 @@ section
 		 overflow: hidden;
 		 width: 90%;
 		 height: 150px;
+		 text-align:center;
 	 }
 	 .box1 .text1 p{
 		font-size: large;
@@ -289,8 +291,8 @@ section
 	 }
     .box2
 	{
-		width: 95%;
-		 margin-left: 0;
+	     width: 90%;
+		 margin-left: 20px;
 	}
 	 .box2 .text2
 	 {
@@ -303,12 +305,14 @@ section
 		 margin: 0 auto;
 		 width: 90%;
 		 height: 150px;
+		 
 	 }
 	 .box2 .hide p
 	 {
 		 color: white;
 		 font-size: large;
 	     font-family: 'Roboto', sans-serif;
+	     text-align:center;
 	 }
 	 .box2 img
 	 {
