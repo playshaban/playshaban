@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    
+}
+/*font-family: 'Roboto', sans-serif; */
+body{
+	background-color: black;
+}
+.menu-bar
+{
+    
+   background-color: black;
+    text-align: center;
+}
+header{
+    text-align: left;
+    margin-left: 10px;
+}
+header h1
+{
+   font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+header p { color: white; font-family: 'Ubuntu', sans-serif; }
+.nav-button
+{
+    display: none;
+}
+.menu-bar ul
+{
+  
+    position: relative;
+    display:inline-flex;
+    list-style: none;
+    color:white;
+}
+.menu-bar ul li
+{
+    position: relative;
+   width: 120px;
+   margin: 15px;
+   padding: 0;
+   text-align: center;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+.active, .menu-bar ul li:hover
+{
+    background-color: grey;
+    border-radius: 3px;
+    
+}
+
+
+
+.first{
+	box-sizing: border-box;
+	padding: 20%;
+	
+	background-image: url(/image_resourses/setup1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+	
+	border-color: black;
+	
+	
+}
+
+section
+{
+	background-color: black;
+	box-sizing: border-box;
+	align-self: center;
+
+}
+
+.box1
+{ 
+	position: relative;
+	margin-left: 10%;
+	width: 80%;
+	height: 500px;
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: black;
+	
+	border-radius:0 5% 0 5%;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	overflow: hidden;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	box-shadow: 10px 10px 10px 0 grey;
+}
+
+.box1 h1{
+	color:white;
+	
+}
+.box1 img{
+	height: 300px;
+	margin-left: 50%;
+	border-radius: 5%;
+	margin-top: -27%;
+	
+}
+
+.text1
+{
+	width: 40%;
+	height: 300px;
+	
+	margin-left: 5%;
+	margin-top: 6%;
+	position: relative;
+    text-align: left;
+	position: relative;
+	
+	
+	
+
+}
+
+.text1 p
+{
+	margin: 0 auto;
+	color: white;
+	font-size: xx-large;
+	font-family: 'Roboto', sans-serif;
+}
+.box2
+{
+	
+	margin-left: 10%;
+	width: 80%;
+	height: 500px;
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: black;
+	
+	border-radius: 5% 0 5% 0;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	overflow: hidden;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	box-shadow: -10px 10px 10px grey;
+	
+}
+.box2 h1
+{
+	color: white;
+}
+.box2 .hide
+{
+	display: none;
+}
+.box2 img
+{
+	height: 300px;
+	margin-right: 50%;
+	border-radius: 5%;
+	margin-top: 5%;
+}
+.box2 .text2
+{
+	width: 40%;
+	height: 300px;
+	margin-top: -25%;
+	margin-left: 50%;
+	position: relative;
+    text-align: left;
+}
+.box2 .text2 p
+{
+	
+	color: white;
+	font-size: xx-large;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+    footer{
+            padding:5%;
+            background-color: black;
+            text-align: center;
+            font-family:'Ubuntu', sans-serif; ;
+        }
+        footer p{
+            color:white;
+        }
+@media screen and (max-width: 480px) {
+	body
+	{
+		background:none;
+	}
+	header
+	{
+		margin-top: 20px;
+		margin: 0 auto;
+		text-align: center;
+		box-sizing: border-box;
+	}
+	
+	.nav-button
+	{
+	   
+	   position: relative;
+	   margin: 0 auto;
+	   display: inline-block;
+	   border-radius:5%;
+	   height: 30px;
+	   width: 120px;
+	   background-color:grey;
+	   
+	   border-color: white; 
+	   border-width: 5%;
+	   
+	   
+	   cursor: pointer;
+
+	}
+	.nav-button a
+	{
+	   
+		font-family: 'Ubuntu', sans-serif;
+		box-sizing: border-box;
+		text-decoration: none;
+		color: white;
+	}
+	.menu-bar ul
+	{
+		display: none;
+		
+		
+		
+	}
+
+	.menu-bar ul li{
+		text-align: left;
+	}
+	 
+	 .menu-bar ul li:hover
+	 {
+		 background-color: grey;
+		 
+		 text-align: center;
+	 }
+	
+	 .first
+	 {
+		 padding: 25%;
+	 }
+	 
+	 .box1
+	 {
+		 width: 95%;
+		 margin-left: 0;
+	 }
+	 
+	 .box1 .text1
+	 {
+		 margin: 0 auto;
+		 overflow: hidden;
+		 width: 90%;
+		 height: 150px;
+	 }
+	 .box1 .text1 p{
+		font-size: large;
+	 }
+	 .box1 img
+	 {
+		 margin: 0 auto;
+		 height: 50%;
+	 }
+    .box2
+	{
+		width: 95%;
+		 margin-left: 0;
+	}
+	 .box2 .text2
+	 {
+		 display: none;
+	 }
+	 .box2 .hide
+	 {
+		 display: block;
+		 overflow: hidden;
+		 margin: 0 auto;
+		 width: 90%;
+		 height: 150px;
+	 }
+	 .box2 .hide p
+	 {
+		 color: white;
+		 font-size: large;
+	     font-family: 'Roboto', sans-serif;
+	 }
+	 .box2 img
+	 {
+		margin: 0 auto;
+		height: 50%;
+		
+	 }
+
+	 
+}
