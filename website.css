@@ -221,28 +221,26 @@ section
 	   
 	   position: relative;
 	   margin: 0 auto;
-	   display: inline-block;
-	   border-radius:10%;
+	  display: block;
+	   border-radius:4%;
 	   height: 30px;
 	   width: 120px;
-	   background-color:grey;
+	   background-color:black;
 	   
-	   border-color: white; 
 	  
+	   border: solid white 1px;
 	   
 	   
 	   cursor: pointer;
 
 	}
-
-	.nav-button a
+	.nav-button:hover
 	{
-	   
-		font-family: 'Ubuntu', sans-serif;
-		box-sizing: border-box;
-		text-decoration: none;
-		color: white;
+		background-color: black;
+		box-shadow: 3px 3px 10px 0 white;
+		
 	}
+
 	.menu-bar ul
 	{
 		display: none;
