@@ -222,9 +222,9 @@ section
 	   position: relative;
 	   margin: 0 auto;
 	  display: block;
-	   border-radius:4%;
-	   height: 30px;
-	   width: 120px;
+	   border-radius: 5%;
+	   height: 20px;
+	   width: 100px;
 	   background-color:black;
 	   
 	  
@@ -239,6 +239,15 @@ section
 		background-color: black;
 		box-shadow: 3px 3px 10px 0 white;
 		
+	}
+
+	.nav-button a
+	{
+	       margin: 0 auto;
+		font-family: 'Ubuntu', sans-serif;
+		box-sizing: border-box;
+		text-decoration: none;
+		color: white;
 	}
 
 	.menu-bar ul
