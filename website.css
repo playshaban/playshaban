@@ -247,13 +247,7 @@ section
 	   cursor: pointer;
 
 	}
-	.nav-button:hover
-	{
-		border-width: 5px;
-		background-color: grey;
-		
-		font-size: x-small;
-	}
+
 
 	.nav-button a
 	{
@@ -291,7 +285,7 @@ section
 	 .box1
 	 {
 		 width: 90%;
-		 margin-left: 10px;
+		 margin-left: 20px;
 	 }
 	 
 	 .box1 .text1
