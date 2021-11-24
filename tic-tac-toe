@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+    <title>tic tac toe</title>
+    <script>
+    
+      var list = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
+      
+    </script>
+    <style>
+      body{
+        padding:0;
+        margin:0;
+        margin-top: 10vh;
+      }
+      .new {
+        
+        background-color: aliceblue;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        width: 400px;
+        height: 500px;
+        border : 1px solid grey;
+        border-radius: 5%;
+        box-shadow: 2px 2px 30px 0;
+        overflow: hidden;
+      }
+      .new table 
+      {
+        box-sizing: border-box;
+        height: 300px;
+        width: 400px;
+        
+      }
+      .new table input[type="button"]
+      {
+      
+        box-sizing: border-box;
+        width: 100px;
+        height: 50px;
+        font-size: 30px;
+        cursor: pointer;
+        border-radius: 15%;
+        background-color: rgb(157, 157, 235);
+      }
+      
+      
+      .err
+      {
+        color: red;
+        height: 70px;
+        width: 400px;
+        background-color: rgba(255, 0, 0, 0.166);
+        font-size: 50px;
+        display: none;
+      }
+      .winner
+      {
+        color: green;
+        height: 70px;
+        width: 400px;
+        background-color: rgba(98, 255, 0, 0.166);
+        font-size: 50px;
+        display: none;
+      }
+      .title
+      {
+        color: green;
+        height: 70px;
+        width: 400px;
+        background-color: rgba(98, 255, 0, 0.166);
+        font-size: 50px;
+      }
+      
+        
+      .actions input[type="button"]
+      {
+        color: blue;
+        background-color: yellow;
+        width: 200px;
+        height: 40px;
+        border-radius: 15px;
+        font-size: 20px;
+      }
+    </style>
+</head>
+<body>
+    <div class="new">
+      <h1>Tic Tac Toe </h1>
+      <div class="title" id ="title1"> Player Turn - O </div>
+      <div class="err" id="err">  </div>
+      <div class="winner" id="winner"></div>
+      <table>
+        <tr>
+          <td><div class="field"><input type="button" id="0" value="" onclick="val(0,0,0)"></div></td>
+          <td><div class="field"><input type="button" id="1" value="" onclick="val(0,1,1)"></div></td>
+          <td><div class="field"><input type="button" id="2" value="" onclick="val(0,2,2)"></div></td>
+        </tr>
+        <tr>
+          <td><div class="field"><input type="button" id="3" value="" onclick="val(1,0,3)"></div></td>
+          <td><div class="field"><input type="button" id="4" value="" onclick="val(1,1,4)"></div></td>
+          <td><div class="field"><input type="button" id="5" value="" onclick="val(1,2,5)"></div></td>
+        </tr>
+        <tr>
+          <td><div class="field"><input type="button" id="6" value="" onclick="val(2,0,6)"></div></td>
+          <td><div class="field"><input type="button" id="7" value="" onclick="val(2,1,7)"></div></td>
+          <td><div class="field"><input type="button" id="8" value="" onclick="val(2,2,8)"></div></td>
+        </tr>
+      </table>
+      <div class="actions"><input type="button" onclick="window.location.reload()" value="New Game"></div>
+    </div>
+    <script>
+
+
+     const tap = document.querySelector('field');
+      move=0;
+    function val(a,b,c)
+    {
+      var title = document.getElementById("title1");
+      var winner = document.getElementById("winner");
+      var banner = document.getElementById("err");
+
+        if(list[c]== -1)
+        {
+          var name = c;
+          
+          
+          
+          if(move%2!=0)
+          {
+            document.getElementById(name).value="X";
+            title.textContent = "Player Turn - O"
+            move++;
+            list[c]='X';
+          }
+          else
+          {
+            document.getElementById(name).value="O";
+            title.textContent = "Player Turn - X"
+            move++;
+            list[c]='O';
+          }
+        }
+    }
+
+    function result()
+    {
+      if(move==9)
+      {
+          var banner = document.getElementById("err");
+          banner.style.display = "block";
+          banner.textContent = "Game Tie";
+      
+        
+          var title = document.getElementById("title1");
+          title.style.display="none";
+
+          var winner = document.getElementById("winner");
+          winner.style.display = "none";
+
+      }
+    }
+    function winner()
+    {
+      var title = document.getElementById("title1");
+      var winner = document.getElementById("winner");
+      var banner = document.getElementById("err");
+      if(list[0]+list[1]+list[2]== "OOO" || list[3]+list[4]+list[5]== "OOO" || list[6]+list[7]+list[8]== "OOO" || list[0]+list[3]+list[6]== "OOO" || list[1]+list[4]+list[7]== "OOO" || list[2]+list[5]+list[8]== "OOO" || list[0]+list[4]+list[8]== "OOO" || list[6]+list[4]+list[2]== "OOO" )
+        {
+          
+          winner.style.display="block";
+          winner.textContent="!! O won!!"
+          
+          
+          title.style.display="none";
+
+          banner.style.display = "none";
+          
+        }
+        else if(list[0]+list[1]+list[2]== "XXX" || list[3]+list[4]+list[5]== "XXX" || list[6]+list[7]+list[8]== "XXX" || list[0]+list[3]+list[6]== "XXX" || list[1]+list[4]+list[7]== "XXX" || list[2]+list[5]+list[8]== "XXX" || list[0]+list[4]+list[8]== "XXX" || list[6]+list[4]+list[2]== "XXX" )
+        {
+         
+          winner.style.display = "block";
+          winner.textContent="!! X won!!"
+         
+          title.style.display="none";
+
+          banner.style.display = "none";
+
+        }
+        
+    }
+
+    setInterval(result,100);
+    setInterval(winner,100);
+
+    </script>
+</body>
