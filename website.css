@@ -10,7 +10,7 @@
 body{
 	padding: 0;
 	margin: 0;
-	background-color: wheat;
+	background-color: orange;
 }
 .menu-bar
 {
@@ -27,7 +27,7 @@ body{
 header{
     text-align: left;
     padding: 20px;
-	background-color: rgb(146, 146, 250);
+	background-image:-webkit-linear-gradient(right,white, rgb(146, 146, 250));
 	box-sizing: border-box;
 	animation: down 2s;
 	box-sizing: border-box;
@@ -137,10 +137,10 @@ section
 	box-sizing: border-box;
 	display: inline-block;
 	
-	background-color: rgba(146, 146, 250, 0.623);
+	background-image:-webkit-linear-gradient(right,white, rgb(146, 146, 250));
 	
 	border-radius:1% 5% 1% 5%;
-	border:2px solid rgba(73, 68, 68, 0.63);
+	border:2px solid rgb(73, 68, 68);
 	overflow: hidden;
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
@@ -149,9 +149,11 @@ section
 }
 .box1:hover
 {
-	box-shadow: 10px 10px 10px 0 grey;
+	box-shadow: 10px 10px 25px 0 black;
+	background-color:rgb(146, 146, 250);
 	border-top: 0;
 	border-left: 0;
+	
 }
 @keyframes left_slide
 {
@@ -205,7 +207,7 @@ section
 	box-sizing: border-box;
 	display: inline-block;
 	
-	background-color: rgba(146, 146, 250, 0.623);
+	background-image:-webkit-linear-gradient(left, white, rgb(146, 146, 250));
 	border-radius: 5% 1% 5% 1%;
 	
 	border:2px solid rgba(73, 68, 68, 0.63);
@@ -220,7 +222,8 @@ section
 }
 .box2:hover
 {
-	box-shadow: -10px 10px 10px 0 grey;
+	box-shadow: -10px 10px 10px 0 black;
+	
 	border-top: 0;
 	border-right: 0;
 }
@@ -274,7 +277,8 @@ section
 @media screen and (max-width: 480px) {
 	body
 	{
-		background:none;
+		background-color: orange;
+		
 	}
 	header
 	{
@@ -286,7 +290,9 @@ section
 
 	.menu-bar
    {
-	background-position: center;
+	 background-image: url(https://playshaban7070.000webhostapp.com/setup1_m.jpg);
+	   background-position: center;
+	   background-size: cover;
    }
 	
 	.nav-button
@@ -345,16 +351,9 @@ section
 	 {
 		 width: 90%;
 		 margin-left: 20px;
-		 animation: left_slide 5s;
+		 background-image:-webkit-linear-gradient( rgb(146, 146, 250), white);
+	
 	 }
-	@keyframes left_slide
-{
-	from
-	{
-		opacity: 20%;
-		margin-left: -50%;
-	}
-}
 	 
 	 .box1 .text1
 	 {
@@ -376,16 +375,8 @@ section
 	{
 	     width: 90%;
 		 margin-left: 20px;
+		 background-image:-webkit-linear-gradient( rgb(146, 146, 250), white);
 	}
-	@keyframes right_slide
-{
-	from
-	{
-		opacity: 20%;
-		margin-left: 50%;
-	}
-}
-
 	 .box2 .text2
 	 {
 		 display: none;
