@@ -345,7 +345,16 @@ section
 	 {
 		 width: 90%;
 		 margin-left: 20px;
+		 animation: left_slide 5s;
 	 }
+	@keyframes left_slide
+{
+	from
+	{
+		opacity: 20%;
+		margin-left: -50%;
+	}
+}
 	 
 	 .box1 .text1
 	 {
@@ -368,6 +377,15 @@ section
 	     width: 90%;
 		 margin-left: 20px;
 	}
+	@keyframes right_slide
+{
+	from
+	{
+		opacity: 20%;
+		margin-left: 50%;
+	}
+}
+
 	 .box2 .text2
 	 {
 		 display: none;
