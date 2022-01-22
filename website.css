@@ -129,7 +129,7 @@ section
 	padding: 30px;
 	display: flex;
 	flex-direction: row;
-	height: 400px;
+	
 	overflow: hidden;
 	
 }
@@ -295,7 +295,7 @@ section
 	 }
 	 .box
 	 {
-		 width: 80%;
+		 width: 90%;
 		 margin: 10px auto;
 		 
 	 }
