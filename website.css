@@ -18,9 +18,9 @@ body{
 {
     
 	background-repeat: no-repeat;
-    height: 500px;
+   
     text-align: center;
-	overflow: hidden;
+	overflow: auto;
 	
 }
 
@@ -95,16 +95,20 @@ header p { color: white; font-family: 'Ubuntu', sans-serif; }
 
 .first{
 	box-sizing: border-box;
-	padding: 20%;
-	height: 300px;
+	height: 450px;
+	padding: 100px;
 	width: 90%;
 	margin: 0 auto;
+	position: relative;
 	background-image: url(https://playshaban7070.000webhostapp.com/setup1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
     box-sizing: border-box;
     background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
 	border-color: black;
 	font-family: 'Ubuntu', sans-serif;
@@ -112,15 +116,18 @@ header p { color: white; font-family: 'Ubuntu', sans-serif; }
 }
 .first h1
 {
-	color: pink;
-	background-color: white;
+	color: red;
+	
     text-shadow: 2px 2px black;
 	font-style:italic;
-	margin-top: 10px;
+	
+	
 }
 .first p
 {
-	background-color: lightblue;
+	font-size: large;
+	text-shadow: 1px 1px white;
+	
 }
 section
 {
@@ -129,7 +136,7 @@ section
 	padding: 30px;
 	display: flex;
 	flex-direction: row;
-	
+	height: 400px;
 	overflow: hidden;
 	
 }
@@ -171,7 +178,7 @@ section
 .box:hover
 {
 	box-shadow: 2px 2px 30px black;
-	padding: 20px;
+	padding: 30px;
 }
 
 .down
@@ -220,9 +227,11 @@ section
 	header
 	{
 		margin-top: 20px;
+		
 		margin: 0 auto;
 		text-align: center;
 		box-sizing: border-box;
+		overflow: auto;
 	}
 
 	.menu-bar
@@ -283,33 +292,35 @@ section
 	 .first
 	 {
 		 padding:20%;
+		 height: 200px;
 		 background-image: url(https://playshaban7070.000webhostapp.com/setup1_m.jpeg);
 	 }
 	 section
 	 {
 		 flex-direction: column;
 		 justify-content: center;
-		height: 70%;
+		 margin: 0;
+		 height: 70%;
 		 margin: 0 auto;
 		
 	 }
 	 .box
 	 {
-		 width: 90%;
-		 margin: 10px auto;
+		 width: 100%;
+		 margin: 10px;
+		 padding: 40px;
 		 height:400px;
-		 
+		 animation: left 7s;
 	 }
-	 .box img
-	 {
-		 
-	}
-	 .up
-	 {
-		 animation: s_down 5s;
+	 
+	 @keyframes left {
+		 from
+		 {
+			 margin-left:-20%;
+			 opacity: 25%;
+		 }
 	 }
-
-
+	
 
 
 	}
