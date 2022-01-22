@@ -10,15 +10,17 @@
 body{
 	padding: 0;
 	margin: 0;
-	background-color: orange;
+	
+	
+    
 }
 .menu-bar
 {
-    background-image: url(https://playshaban7070.000webhostapp.com/setup1.jpg);
-	background-repeat: no-repeat;
     
+	background-repeat: no-repeat;
+    height: 500px;
     text-align: center;
-	
+	overflow: hidden;
 	
 }
 
@@ -27,9 +29,9 @@ body{
 header{
     text-align: left;
     padding: 20px;
-	background-image:-webkit-linear-gradient(right,white, rgb(146, 146, 250));
+	background:rgb(146, 146, 250);
 	box-sizing: border-box;
-	animation: down 2s;
+	animation: down 1s;
 	box-sizing: border-box;
 	
 }
@@ -42,11 +44,16 @@ header{
 	}
 }
 
+
 header h1
 {
    font-family: 'Ubuntu', sans-serif;
     color:white;
     text-shadow: 2px 2px rgb(0, 0, 0) ;
+}
+header img
+{
+	height: 15px;
 }
 header p { color: white; font-family: 'Ubuntu', sans-serif; }
 .nav-button
@@ -76,10 +83,12 @@ header p { color: white; font-family: 'Ubuntu', sans-serif; }
     color: white;
     font-family: 'Ubuntu', sans-serif;
 }
-.active, .menu-bar ul li:hover
+.active, .menu-bar ul li a:hover
 {
     background-color: white;
     border-radius: 3px;
+	color: black;
+	padding: 10px;
     
 }
 
@@ -87,9 +96,10 @@ header p { color: white; font-family: 'Ubuntu', sans-serif; }
 .first{
 	box-sizing: border-box;
 	padding: 20%;
+	height: 300px;
 	width: 90%;
 	margin: 0 auto;
-	
+	background-image: url(https://playshaban7070.000webhostapp.com/setup1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -115,155 +125,82 @@ header p { color: white; font-family: 'Ubuntu', sans-serif; }
 section
 {
 	
-	box-sizing: border-box;
-	align-self: center;
+	margin:10px;
+	padding: 30px;
 	display: flex;
+	flex-direction: row;
+	height: 400px;
+	overflow: hidden;
+	
+}
+.box
+{
+    margin: 0 auto;
+	padding: 50px;
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+    gap: 20px;
+	width: 30%;
 	flex-direction: column;
-    
-}
-.c_area
-{
-	box-sizing: border-box;
-	margin: 20px 0 20px 0;
-	
-}
+	background-image: linear-gradient(rgb(146, 146, 250),white);
 
-.box1
-{ 
-	
-	margin-left: 10%;
-	width: 80%;
-	height: 500px;
-	box-sizing: border-box;
-	display: inline-block;
-	
-	background-image:-webkit-linear-gradient(right,white, rgb(146, 146, 250));
-	
-	border-radius:1% 5% 1% 5%;
-	border:2px solid rgb(73, 68, 68);
-	overflow: hidden;
-	text-align: center;
+	border-radius: 5%;
+	border-bottom: 1px solid gray;
+    text-align: center;
+}
+.box h1
+{
+	color: white;
+	font-weight:900;
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 2px 2px black;
+
+
+}
+.box p
+{
 	font-family: 'Ubuntu', sans-serif;
 	
-	animation: left_slide 5s;
 }
-.box1:hover
+.box img
 {
-	box-shadow: 10px 10px 25px 0 black;
-	background-color:rgb(146, 146, 250);
-	border-top: 0;
-	border-left: 0;
-	
+	border-radius: 5%;
 }
-@keyframes left_slide
+.box:hover
+{
+	box-shadow: 2px 2px 30px black;
+	padding: 20px;
+}
+
+.down
+{
+	animation: s_down 5s;
+}
+.up
+{
+	animation: s_up 5s;
+}
+@keyframes s_down
 {
 	from
 	{
-		opacity: 20%;
-		margin-left: -10%;
+		opacity: 0;
+		margin-top:-20%;
 	}
 }
-
-
-
-.box1 img{
-	height: 300px;
-	margin-left: 50%;
-	border-radius: 5%;
-	margin-top: -22%;
-	
-}
-
-
-.text1
-{
-	width: 40%;
-	height: 200px;
-	
-	margin-left: 5%;
-	margin-top: 10%;
-	position: relative;
-    text-align: left;
-	position: relative;
-	
-	
-	
-
-}
-
-.text1 p
-{
-	margin: 0 auto;
-	
-	font-size: xx-large;
-	font-family: 'Roboto', sans-serif;
-}
-.box2
-{
-	
-	margin-left: 10%;
-	width: 80%;
-	height: 500px;
-	box-sizing: border-box;
-	display: inline-block;
-	
-	background-image:-webkit-linear-gradient(left, white, rgb(146, 146, 250));
-	border-radius: 5% 1% 5% 1%;
-	
-	border:2px solid rgba(73, 68, 68, 0.63);
-
-	overflow: hidden;
-	text-align: center;
-	font-family: 'Ubuntu', sans-serif;
-	
-	animation: right_slide 5s;
-	
-	
-}
-.box2:hover
-{
-	box-shadow: -10px 10px 10px 0 black;
-	
-	border-top: 0;
-	border-right: 0;
-}
-@keyframes right_slide
+@keyframes s_up
 {
 	from
 	{
-		opacity: 20%;
-		margin-left: 20%;
+		margin-bottom: -20%;
+		opacity: 25%;
 	}
 }
 
-.box2 .hide
-{
-	display: none;
-}
-.box2 img
-{
-	height: 300px;
-	margin-right: 50%;
-	border-radius: 5%;
-	margin-top: 8%;
-}
-.box2 .text2
-{
-	width: 40%;
-	height: 200px;
-	margin-top: -22%;
-	margin-left: 50%;
-	position: relative;
-    text-align: left;
-	
-}
-.box2 p
-{
-	color: black;
-	
-	font-size: xx-large;
-	font-family: 'Roboto', sans-serif;
-}
+/* font-family: 'Roboto', sans-serif; */
+
 
 
     footer{
@@ -277,7 +214,7 @@ section
 @media screen and (max-width: 480px) {
 	body
 	{
-		background-color: orange;
+		background:none;
 		
 	}
 	header
@@ -290,8 +227,9 @@ section
 
 	.menu-bar
    {
-	 background-image: url(https://playshaban7070.000webhostapp.com/setup1_m.jpeg);
+	 
 	   background-position: center;
+	   
 	   background-size: cover;
    }
 	
@@ -337,7 +275,7 @@ section
 	 
 	 .menu-bar ul li:hover
 	 {
-		 background-color: grey;
+		
 		 
 		 text-align: center;
 	 }
@@ -345,64 +283,28 @@ section
 	 .first
 	 {
 		 padding:20%;
+		 background-image: url(https://playshaban7070.000webhostapp.com/setup1_m.jpeg);
 	 }
-	 
-	 .box1
+	 section
 	 {
-		 width: 90%;
-		 margin-left: 20px;
-		 background-image:-webkit-linear-gradient( rgb(146, 146, 250), white);
-	
-	 }
-	 
-	 .box1 .text1
-	 {
+		 flex-direction: column;
+		 justify-content: center;
+		height: 70%;
 		 margin: 0 auto;
-		 overflow: hidden;
-		 width: 90%;
-		 height: 150px;
-		 text-align:center;
-	 }
-	 .box1 .text1 p{
-		font-size: large;
-	 }
-	 .box1 img
-	 {
-		 margin: 0 auto;
-		 height: 50%;
-	 }
-    .box2
-	{
-	     width: 90%;
-		 margin-left: 20px;
-		 background-image:-webkit-linear-gradient( rgb(146, 146, 250), white);
-	}
-	 .box2 .text2
-	 {
-		 display: none;
-	 }
-	 .box2 .hide
-	 {
-		 display: block;
-		 overflow: hidden;
-		 margin: 0 auto;
-		 width: 90%;
-		 height: 150px;
-		 
-	 }
-	 .box2 .hide p
-	 {
-		 
-		 font-size: large;
-	     font-family: 'Roboto', sans-serif;
-	     text-align:center;
-	 }
-	 .box2 img
-	 {
-		margin: 0 auto;
-		height: 50%;
 		
 	 }
+	 .box
+	 {
+		 width: 80%;
+		 margin: 10px auto;
+		 
+	 }
+	 .up
+	 {
+		 animation: s_down 5s;
+	 }
 
-	 
-}
+
+
+
+	}
