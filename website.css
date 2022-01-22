@@ -313,17 +313,14 @@ section
 		 animation: left 7s;
 	 }
 	 
-	 @webkit-keyframes left {
+	 @keyframes left {
 		 from
 		 {
 			 margin-left:-20%;
 			 opacity: 25%;
 		 }
 	 }
-	 .box img
-	 {
-  		height:150px;
-	}
+	 
 
 
 	}
