@@ -310,18 +310,15 @@ section
 		 margin: 10px;
 		 padding: 40px;
 		 height:450px;
-		 animation:  s_right 5s;
+		 animation:  none;
 	 }
-	 
-	 @keyframes s_right
+	 .box img
 	{
-	  from 
-		{
-			opacity:25%;
-			margin-left:20%;
-		}
+	height:100px;
 	
 	}
+	 
+	
 	
 	 
 	 
