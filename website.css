@@ -310,7 +310,7 @@ section
 		 margin: 10px;
 		 padding: 40px;
 		 height:400px;
-		 animation: left 7s;
+		 animation:  none;
 	 }
 	 
 	 @keyframes left {
